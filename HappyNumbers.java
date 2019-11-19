@@ -46,16 +46,17 @@ public class HappyNumbers{
         int inputNumber;
         do
         {
-            System.out.println("Insert your integer: ");
+            System.out.println("Insert your positive integer: ");
             while(!userNumber.hasNextInt())
             {
-                System.out.println("Please insert an integer, elsewise it will not work.");
+                System.out.println("Please insert a positive integer, elsewise it will not work: ");
                 userNumber.next();
             
             
             }  
         inputNumber = userNumber.nextInt();
         }while(inputNumber <= 0);
+        System.out.println("Positive intgers:");
             //int inputNumber = 13;
             if(isHappy(inputNumber))
             {
